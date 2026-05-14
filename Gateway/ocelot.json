@@ -1,0 +1,108 @@
+﻿{
+  "Routes": [
+
+    {
+      "DownstreamPathTemplate": "/api/users",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "userservice20260514104014-fscrhcfuasedbcdt.centralus-01.azurewebsites.net"
+          // "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/users",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/users/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "userservice20260514104014-fscrhcfuasedbcdt.centralus-01.azurewebsites.net"
+         // "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/users/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/patients",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "patientservice20260514125521-fwh8bnchdhf7d6hh.centralus-01.azurewebsites.net"
+         // "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/patients",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/patients/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "patientservice20260514125521-fwh8bnchdhf7d6hh.centralus-01.azurewebsites.net"
+        //  "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/patients/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/doctors",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "doctorservice20260514110757-evfrbbchdpeah8cd.centralus-01.azurewebsites.net"
+         // "Port": 5003
+        }
+      ],
+      "UpstreamPathTemplate": "/doctors",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/doctors/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "doctorservice20260514110757-evfrbbchdpeah8cd.centralus-01.azurewebsites.net"
+          // "Port": 5003
+        }
+      ],
+      "UpstreamPathTemplate": "/doctors/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/appointments",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "appointmentservice20260514165927-cncpgreudhg8hha4.centralus-01.azurewebsites.net"
+         // "Port": 5004
+        }
+      ],
+      "UpstreamPathTemplate": "/appointments",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/appointments/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "appointmentservice20260514165927-cncpgreudhg8hha4.centralus-01.azurewebsites.net"
+         // "Port": 5004
+        }
+      ],
+      "UpstreamPathTemplate": "/appointments/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    }
+
+  ],
+  //"GlobalConfiguration": {
+  //  "BaseUrl": "http://localhost:5000"
+  //}
+}
